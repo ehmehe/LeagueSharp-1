@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--EXTERNAL_PROPERTIES: MSBuildToolsVersion-->
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CD6364A-5FEC-4111-AE46-492A11DC8251}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LeagueSharp.CommonEx</RootNamespace>
+    <AssemblyName>LeagueSharp.CommonEx</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\LeagueSharp.CommonEx.XML</DocumentationFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\LeagueSharp.CommonEx.XML</DocumentationFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\LeagueSharp.CommonEx.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\LeagueSharp.CommonEx.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\LeagueSharp.CommonEx.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\LeagueSharp.CommonEx.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="clipper_library">
+      <HintPath>C:\Users\Matze\Desktop\LeagueSharp\System\clipper_library.dll</HintPath>
+    </Reference>
+    <Reference Include="LeagueSharp">
+      <HintPath>C:\Users\Matze\Desktop\LeagueSharp\System\LeagueSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LeagueSharp.Sandbox">
+      <HintPath>C:\Users\Matze\Desktop\LeagueSharp\System\LeagueSharp.Sandbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\Matze\Desktop\LeagueSharp\System\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX">
+      <HintPath>C:\Users\Matze\Desktop\LeagueSharp\System\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9">
+      <HintPath>C:\Users\Matze\Desktop\LeagueSharp\System\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Bootstrap.cs" />
+    <Compile Include="Core\Enumerations\CastStates.cs" />
+    <Compile Include="Core\Enumerations\CenteredFlags.cs" />
+    <Compile Include="Core\Enumerations\CollisionableObjects.cs" />
+    <Compile Include="Core\Enumerations\DamageType.cs" />
+    <Compile Include="Core\Enumerations\DeviceOptionIdentity.cs" />
+    <Compile Include="Core\Enumerations\GapcloserType.cs" />
+    <Compile Include="Core\Enumerations\KeyBindType.cs" />
+    <Compile Include="Core\Enumerations\LogLevel.cs" />
+    <Compile Include="Core\Enumerations\MapType.cs" />
+    <Compile Include="Core\Enumerations\MenuState.cs" />
+    <Compile Include="Core\Enumerations\MinionOrderTypes.cs" />
+    <Compile Include="Core\Enumerations\MinionTeam.cs" />
+    <Compile Include="Core\Enumerations\MinionTypes.cs" />
+    <Compile Include="Core\Enumerations\OrbwalkerMode.cs" />
+    <Compile Include="Core\Enumerations\OrbwalkerType.cs" />
+    <Compile Include="Core\Enumerations\PerformanceType.cs" />
+    <Compile Include="Core\Enumerations\TargetSelectorMode.cs" />
+    <Compile Include="Core\Enumerations\WindowsMessages.cs" />
+    <Compile Include="Core\Events\End.cs" />
+    <Compile Include="Core\Events\Gapcloser.cs" />
+    <Compile Include="Core\Events\Turret.cs" />
+    <Compile Include="Core\Extensions\Streams.cs" />
+    <Compile Include="Core\Math\Geometry.cs" />
+    <Compile Include="Core\Math\Prediction\Health.cs" />
+    <Compile Include="Core\MultiLanguage.cs" />
+    <Compile Include="Core\Orbwalker.cs" />
+    <Compile Include="Core\Render\Render.cs" />
+    <Compile Include="Core\Render\RenderObjects\Circle.cs" />
+    <Compile Include="Core\Render\RenderObjects\Line.cs" />
+    <Compile Include="Core\Render\RenderObjects\Rectangle.cs" />
+    <Compile Include="Core\Render\RenderObjects\Sprite.cs" />
+    <Compile Include="Core\Render\RenderObjects\Text.cs" />
+    <Compile Include="Core\Spells.cs" />
+    <Compile Include="Core\UI\Menu\Menu.cs" />
+    <Compile Include="Core\UI\Notifications\Notifications.cs" />
+    <Compile Include="Core\Utils\AutoAttack.cs" />
+    <Compile Include="Core\Utils\CallbackPerformance.cs" />
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Enumerations\HitChance.cs" />
+    <Compile Include="Core\Enumerations\SkillshotType.cs" />
+    <Compile Include="Core\Events\Dash.cs" />
+    <Compile Include="Core\Events\InterruptableSpell.cs" />
+    <Compile Include="Core\Events\Load.cs" />
+    <Compile Include="Core\Events\Stealth.cs" />
+    <Compile Include="Core\Extensions\Enumerable.cs" />
+    <Compile Include="Core\Extensions\SharpDX\Vector2Extensions.cs" />
+    <Compile Include="Core\Extensions\SharpDX\Vector3Extensions.cs" />
+    <Compile Include="Core\Extensions\SharpDX\Vector4Extensions.cs" />
+    <Compile Include="Core\Extensions\Unit.cs" />
+    <Compile Include="Core\Math\Collision.cs" />
+    <Compile Include="Core\Utils\Cursor.cs" />
+    <Compile Include="Core\Utils\Mouse.cs" />
+    <Compile Include="Core\Utils\Serialization.cs" />
+    <Compile Include="Core\Utils\VirtualKey.cs" />
+    <Compile Include="Core\Utils\WindowsKeys.cs" />
+    <Compile Include="Core\Utils\Math.cs" />
+    <Compile Include="Core\Math\MEC.cs" />
+    <Compile Include="Core\Math\Polygons\Arc.cs" />
+    <Compile Include="Core\Math\Polygons\Circle.cs" />
+    <Compile Include="Core\Math\Polygons\Line.cs" />
+    <Compile Include="Core\Math\Polygons\Polygon.cs" />
+    <Compile Include="Core\Math\Polygons\Rectangle.cs" />
+    <Compile Include="Core\Math\Polygons\Ring.cs" />
+    <Compile Include="Core\Math\Polygons\Sector.cs" />
+    <Compile Include="Core\Math\Prediction\Cluster.cs" />
+    <Compile Include="Core\Math\Prediction\Movement.cs" />
+    <Compile Include="Core\Math\Prediction\Path.cs" />
+    <Compile Include="Core\Network\GamePacket.cs" />
+    <Compile Include="Core\Network\Packet.cs" />
+    <Compile Include="Core\Utils\Network.cs" />
+    <Compile Include="Core\ObjectHandler.cs" />
+    <Compile Include="Core\Enumerations\CircleType.cs" />
+    <Compile Include="Core\Utils\Cache.cs" />
+    <Compile Include="Core\Utils\DelayAction.cs" />
+    <Compile Include="Core\Utils\Logging.cs" />
+    <Compile Include="Core\Utils\Performance.cs" />
+    <Compile Include="Core\Utils\TickOperation.cs" />
+    <Compile Include="Core\Utils\Spell.cs" />
+    <Compile Include="Core\Utils\Version.cs" />
+    <Compile Include="Core\Utils\WeightedRandom.cs" />
+    <Compile Include="Core\Variables.cs" />
+    <Compile Include="Core\Wrappers\ChampionData.cs" />
+    <Compile Include="Core\Wrappers\Damage.cs" />
+    <Compile Include="Core\Wrappers\HpBarDamageIndicator.cs" />
+    <Compile Include="Core\Wrappers\LastCastedSpell.cs" />
+    <Compile Include="Core\Wrappers\Map.cs" />
+    <Compile Include="Core\Managers\MinionManager.cs" />
+    <Compile Include="Core\Wrappers\Spell.cs" />
+    <Compile Include="Core\Wrappers\SpellDataWrapper.cs" />
+    <Compile Include="Core\Wrappers\TargetSelector.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Data\ChampionData.json" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Third_Party\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Menu\CPForm.png" />
+    <Content Include="Resources\Menu\SliderActive.png" />
+    <Content Include="Resources\Menu\SliderDisabled.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
